@@ -53,8 +53,10 @@ public class Lab02a_PlayerControl : NetworkBehaviour {
 				{
 					continue;
 				}
-			}
-		}
+
+                CmdMoveOnServer(possibleKey);
+            }
+        }
 
 		SyncState ();
 	}
